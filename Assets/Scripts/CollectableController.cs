@@ -56,11 +56,14 @@ public class CollectableController : MonoBehaviour {
 
     void HandleClick()
     {
-        // collect the item
-        playerCollect.Collect(gameObject);
+        if (Vector3.Distance(transform.position, playerCollect.gameObject.transform.position) <= playerCollect.maxDistance)
+        {
+            // collect the item
+            playerCollect.Collect(gameObject);
 
-        // destroy the item
-        Destroy(gameObject);
+            // destroy the item
+            Destroy(gameObject);
+        }
     }
 
     void HandleOut()
