@@ -10,7 +10,7 @@ public class GameOverController : MonoBehaviour {
         // check if an enemy has hit us
         if (other.CompareTag("Enemy"))
         {
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene("MainScene");
         }
     }
 }
