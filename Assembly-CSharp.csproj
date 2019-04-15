@@ -67,9 +67,11 @@
     <Compile Include="Assets\Scripts\FreeTeleportationZone.cs" />
     <Compile Include="Assets\Scripts\GameOverController.cs" />
     <Compile Include="Assets\Scripts\GunController.cs" />
+    <Compile Include="Assets\Scripts\PillarTeleport.cs" />
     <Compile Include="Assets\Scripts\PlayerCollectableCtrl.cs" />
     <Compile Include="Assets\Scripts\PlayerContoller.cs" />
     <Compile Include="Assets\Scripts\PlayerFreeTeleportController.cs" />
+    <Compile Include="Assets\Scripts\TalkToNPC.cs" />
     <Compile Include="Assets\VR Standard Assets\Scripts\Reticle.cs" />
     <Compile Include="Assets\VR Standard Assets\Scripts\VRCameraUI.cs" />
     <Compile Include="Assets\VR Standard Assets\Scripts\VRDeviceManager.cs" />
