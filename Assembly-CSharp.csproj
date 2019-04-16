@@ -60,7 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Clock\Scripts\Clock.cs" />
+    <Compile Include="Assets\Downloaded Assets\Clock\Scripts\Clock.cs" />
+    <Compile Include="Assets\Downloaded Assets\Simple Scene Fade Load System\Scripts\Fader.cs" />
+    <Compile Include="Assets\Downloaded Assets\Simple Scene Fade Load System\Scripts\Initiate.cs" />
     <Compile Include="Assets\Scripts\BulletController.cs" />
     <Compile Include="Assets\Scripts\CollectableController.cs" />
     <Compile Include="Assets\Scripts\EnemyScript.cs" />
@@ -71,6 +73,7 @@
     <Compile Include="Assets\Scripts\PlayerCollectableCtrl.cs" />
     <Compile Include="Assets\Scripts\PlayerContoller.cs" />
     <Compile Include="Assets\Scripts\PlayerFreeTeleportController.cs" />
+    <Compile Include="Assets\Scripts\TalkToConductor.cs" />
     <Compile Include="Assets\Scripts\TalkToNPC.cs" />
     <Compile Include="Assets\VR Standard Assets\Scripts\Reticle.cs" />
     <Compile Include="Assets\VR Standard Assets\Scripts\VRCameraUI.cs" />
@@ -99,6 +102,7 @@
     <None Include="Assets\Textures\HighQualityBricks&amp;Walls\README.txt" />
     <None Include="Assets\Textures\HighQualityBricks&amp;Walls\Shaders\wall-846013.shader" />
     <None Include="Assets\Textures\HighQualityBricks&amp;Walls\Shaders\tile-846018.shader" />
+    <None Include="Assets\Downloaded Assets\Simple Scene Fade Load System\ReadMeFirst.txt" />
     <None Include="Assets\Textures\HighQualityBricks&amp;Walls\Shaders\bricks-868344.shader" />
     <None Include="Assets\Textures\HighQualityBricks&amp;Walls\Shaders\texture-709723.shader" />
     <None Include="Assets\Textures\HighQualityBricks&amp;Walls\Shaders\wall-617961.shader" />

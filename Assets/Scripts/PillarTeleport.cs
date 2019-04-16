@@ -11,6 +11,8 @@ public class PillarTeleport : MonoBehaviour
 
     public GameObject player;
 
+    public GameObject conductor;
+
     // player collectable ctrl
     PlayerCollectableCtrl playerCollect;
 
@@ -81,6 +83,8 @@ public class PillarTeleport : MonoBehaviour
         {
             //teleport player to secret platform
             player.transform.position = teleportDestination.transform.position;
+            AudioSource audioSource = conductor.GetComponent<AudioSource>();
+            audioSource.Play();
         }
     }
 }
