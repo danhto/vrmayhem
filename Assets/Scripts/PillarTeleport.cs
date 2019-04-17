@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using VRStandardAssets.Utils;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(VRInteractiveItem))]
 public class PillarTeleport : MonoBehaviour
@@ -13,6 +14,9 @@ public class PillarTeleport : MonoBehaviour
 
     public GameObject conductor;
 
+    public Image playerReticle;
+    Color32 originalColor;
+
     // player collectable ctrl
     PlayerCollectableCtrl playerCollect;
 
@@ -21,6 +25,8 @@ public class PillarTeleport : MonoBehaviour
 
     void Awake()
     {
+        originalColor = playerReticle.GetComponent<Image>().color;
+
         // get the vr interactive item component
         vrItem = GetComponent<VRInteractiveItem>();
 
@@ -74,6 +80,7 @@ public class PillarTeleport : MonoBehaviour
 
     void Highlight(bool flag)
     {
+        playerReticle.GetComponent<Image>().color = flag ? new Color32(124, 252, 0, 100) : originalColor;
         GetComponent<Renderer>().material.SetFloat("_Outline", flag ? 0.002f : 0f);
     }
 
