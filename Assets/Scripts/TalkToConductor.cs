@@ -86,9 +86,8 @@ public class TalkToConductor : MonoBehaviour
         Debug.Log("CLICKING = " + Vector3.Distance(transform.position, playerCollect.gameObject.transform.position));
         if (Vector3.Distance(transform.position, playerCollect.gameObject.transform.position) / 3 <= playerCollect.maxDistance)
         {
-            Initiate.Fade("TrainStation", Color.black, 2.0f);
+            Initiate.Fade("houndScene", Color.black, 2.0f);
             Initiate.DoneFading();
-            SceneManager.LoadScene("houndScene");
         }
     }
 }

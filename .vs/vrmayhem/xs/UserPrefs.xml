@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{407A6849-76B4-998F-9079-DFAE0E9C3851}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TalkToConductor.cs">
+    <Files>
+      <File FileName="Assets/Scripts/TalkToConductor.cs" Line="89" Column="38" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
