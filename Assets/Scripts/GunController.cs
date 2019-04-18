@@ -21,8 +21,13 @@ public class GunController : MonoBehaviour {
     // pool
     ObjectPool bulletPool;
 
+    // camera transform
+    Camera camera;
+
     void Awake()
     {
+        camera = Camera.main;
+
         //get the object pool for our bullets
         bulletPool = GetComponent<ObjectPool>();
 
@@ -42,23 +47,25 @@ public class GunController : MonoBehaviour {
     // shoot a bullet
     public void Shoot()
     {
-        // get a bullet from the pool
-        GameObject newBullet = bulletPool.GetObj();
+        if (gameObject.activeSelf) {
+            // get a bullet from the pool
+            GameObject newBullet = bulletPool.GetObj();
 
-        // position the new bullet at the center of the gun
-        newBullet.transform.position = transform.position;
+            // position the new bullet at the center of the gun
+            newBullet.transform.position = transform.position;
 
-        // get rigid body of the new bullet
-        Rigidbody rb = newBullet.GetComponent<Rigidbody>();
+            // get rigid body of the new bullet
+            Rigidbody rb = newBullet.GetComponent<Rigidbody>();
 
-        // give the bullet a velocity
-        rb.velocity = transform.forward * bulletSpeed;
+            // give the bullet a velocity
+            rb.velocity = camera.transform.forward * bulletSpeed;
 
-        // decrease ammo
-        ammo--;
+            // decrease ammo
+            ammo--;
 
-        //refresh ui
-        RefreshUI();
+            //refresh ui
+            RefreshUI();
+        }
     }
 
     void RefreshUI()

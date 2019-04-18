@@ -76,14 +76,12 @@ public class TalkToConductor : MonoBehaviour
 
     void Highlight(bool flag)
     {
-        Debug.Log("HIGHLIGHTING " + flag);
         playerReticle.GetComponent<Image>().color = flag ? new Color32(124, 252, 0, 100) : originalColor;
         GetComponent<Renderer>().material.SetFloat("_Outline", flag ? 0.002f : 0f);
     }
 
     void HandleClick()
     {
-        Debug.Log("CLICKING = " + Vector3.Distance(transform.position, playerCollect.gameObject.transform.position));
         if (Vector3.Distance(transform.position, playerCollect.gameObject.transform.position) / 3 <= playerCollect.maxDistance)
         {
             Initiate.Fade("houndScene", Color.black, 2.0f);
