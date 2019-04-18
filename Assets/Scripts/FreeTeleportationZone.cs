@@ -13,6 +13,7 @@ public class FreeTeleportationZone : MonoBehaviour {
 
     void Awake()
     {
+        Debug.Log("AWAKE");
         // get interactive vr item component
         vrItem = GetComponent<VRInteractiveItem>();
 

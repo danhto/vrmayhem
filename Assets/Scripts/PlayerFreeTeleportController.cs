@@ -39,7 +39,7 @@ public class PlayerFreeTeleportController : MonoBehaviour {
 
         // find reticle
         reticle = FindObjectOfType<Reticle>();
-
+        Debug.Log("Reticle position: " + reticle.transform.position);
         // get the line renderer
         if (showArc)
         {
@@ -61,6 +61,7 @@ public class PlayerFreeTeleportController : MonoBehaviour {
     // hide the target
     public void HideTarget()
     {
+        Debug.Log("Hiding target");
         target.SetActive(false);
 
         if(reticle != null)
@@ -75,9 +76,11 @@ public class PlayerFreeTeleportController : MonoBehaviour {
     // show target
     public void ShowTarget(Vector3 position)
     {
+        Debug.Log("Handle Show Target: " + position + " distance : " + Vector3.Distance(position, transform.position));
         // check distance
         if (Vector3.Distance(position, transform.position) <= maxDistance)
         {
+            Debug.Log("Showing target ... " );
             //if the target is not active, activate it!
             if (!target.activeInHierarchy)
             {
