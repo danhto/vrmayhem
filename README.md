@@ -25,7 +25,7 @@ Scene 1: Entrance to train station.
 
 "You've spent your whole life dreaming of becoming a lightning wielding sorcereress, but unfortunately you had to grow up and instead took a job recruiting young muggles for some giant corporation. On your way home you heard some kids talking about a secret train that takes you to the Jack Daniel's school for Thunder Magicks! You've followed them to the train station, find that secret train!"
 
-  Mysterious Figure: "Ah you have a golden ticket! Please head to platform 7 and a half to find your train. Have a good trip!"
+  Mysterious Figure: "Hello pretty lady, I know what brings you here! You'll find it at Platform 7 and half!"
 
 Scene 1a: Inside train on a seat
 
