@@ -52,3 +52,9 @@ Scene 3: On a bridge in front of the Jack Daniels school of Thunder Magicks
 <Fire Jagerbomb spell at Dark Shelby>
   
   Mysterious Figure: "We did it! I have something to admit, I haven't been stalking you because I'm creepy, but because I've fallen for you. You're electrifying purple hair has me completely enthralled! <Explosive reveal> Join me and together we shall rule the galaxy!"
+  
+  
+  Audio credits:
+  
+  Mike Koenig
+  Daniel Simion

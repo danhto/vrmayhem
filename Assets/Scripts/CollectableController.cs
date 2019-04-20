@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using VRStandardAssets.Utils;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(VRInteractiveItem))]
 public class CollectableController : MonoBehaviour {
@@ -24,8 +25,14 @@ public class CollectableController : MonoBehaviour {
     // player collectable ctrl
     PlayerCollectableCtrl playerCollect;
 
+    // reticle
+    public Image reticle;
+    Color32 originalColor;
+
     void Awake()
     {
+        originalColor = reticle.color;
+
         // get the vr interactive item component
         vrItem = GetComponent<VRInteractiveItem>();
 
@@ -61,6 +68,14 @@ public class CollectableController : MonoBehaviour {
             // collect the item
             playerCollect.Collect(gameObject);
 
+            if (name.Equals("Watermelon") || name.Equals("Sushi"))
+            {
+                GameObject powerups = GameObject.Find("Powerups");
+                AudioSource audio = powerups.GetComponent<AudioSource>();
+                audio.Play();
+            }
+
+            Highlight(false);
             // destroy the item
             Destroy(gameObject);
         }
@@ -89,6 +104,7 @@ public class CollectableController : MonoBehaviour {
 
     void Highlight(bool flag)
     {
+        reticle.color = flag ? new Color32(124, 252, 0, 100) : originalColor;
         GetComponent<Renderer>().material.SetFloat("_Outline", flag ? 0.002f : 0f);
     }
 
